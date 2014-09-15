@@ -22,7 +22,7 @@
 		<link href="css/orders.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/ui/1.8.16/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="http://code.leejefon.com/jquery.maphilight.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maphilight.min.js"></script>
 		<script type="text/javascript" src="js/maps.js"></script>
 		<script type="text/javascript" src="js/orders.js"></script>
 	</head>
@@ -207,7 +207,7 @@
 
 			<div class="clear"></div><br />
 
-			<input type="button" name="planNewTrip" href="/AirlineReservationSystem" value="Plan a new trip" />
+			<input type="button" name="planNewTrip" href="/" value="Plan a new trip" />
 		</div>
 
 		<div class="clear"></div>

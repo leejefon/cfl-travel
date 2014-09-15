@@ -48,7 +48,7 @@
 
 					Order order = (Order) request.getAttribute("order");
 					if (order == null) {
-						response.sendRedirect(response.encodeRedirectURL("/AirlineReservationSystem"));
+						response.sendRedirect(response.encodeRedirectURL("/"));
 						return;
 					}
 				%>
@@ -169,7 +169,7 @@
 						<td colspan="2">
 							<input type="hidden" name="orderId" value="<%= order.getOrderId() %>" />
 							<input type="submit" value="Submit" />
-							<input type="submit" value="Plan More Trip" href="/AirlineReservationSystem" id="planNewTrip" />
+							<input type="submit" value="Plan More Trip" href="/" id="planNewTrip" />
 						</td>
 					</tr>
 				</table>
@@ -177,7 +177,7 @@
 				<div id="paidMessage">
 					Paid
 					<div>
-						<input type="submit" value="Plan New Trip" href="/AirlineReservationSystem" id="planNewTrip" />&nbsp;&nbsp;
+						<input type="submit" value="Plan New Trip" href="/" id="planNewTrip" />&nbsp;&nbsp;
 						<input type="submit" value="View Order History" href="orders.jsp" id="viewHistory" />
 					</div>
 				</div>

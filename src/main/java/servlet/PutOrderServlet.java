@@ -42,7 +42,7 @@ public class PutOrderServlet extends HttpServlet {
 			orderId = Integer.parseInt(request.getParameter("oid"));
 		} catch (NumberFormatException e) {
 			// redirect to home page
-			response.sendRedirect(response.encodeRedirectURL("/AirlineReservationSystem"));
+			response.sendRedirect(response.encodeRedirectURL("/"));
 			return;
 		}
 
