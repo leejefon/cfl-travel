@@ -1,0 +1,120 @@
+<!--
+    Document   : index.html
+    Created on : 2011/10/26
+    Author     : Jeff Lee
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>CFL Travel Agency</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+		<link href="css/overcast/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="css/base.css" rel="stylesheet" type="text/css" />
+		<link href="css/form.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.8.16/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://code.leejefon.com/jquery.maphilight.min.js"></script>
+		<script type="text/javascript" src="js/maps.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>CFL Travel Agency</h1>
+		</div>
+
+		<div class="clear"></div>
+
+		<div id="content">
+			<h2>Welcome!</h2>
+
+			<div id="infobox">
+				<div id="intro">
+					Simple steps to book airplane tickets and travel the world!
+					<b>Click on any city below and start planning your trip!</b>
+				</div>
+				<div id="steps">
+					<span><b>Step 1: Plan</b></span>
+					<span class="unfocus">Step 2: Payment</span>
+					<span class="unfocus">Step 3: Done</span>
+				</div>
+				<div class="errorMsg"></div>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="part1">
+				<form action="PutOrder" method="post" id="reservationForm">
+					<div id="tripType">
+						<table>
+							<tr>
+								<td>
+									<input type="radio" name="tripType" value="roundtrip" id="roundtrip" checked="checked" />
+									<label for="roundtrip">Round Trip</label>
+									<input type="radio" name="tripType" value="oneway" id="oneway" />
+									<label for="oneway">One Way</label>
+								</td>
+								<td>
+									<input type="button" name="viewHistory" value="View Order History" />
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="passengers">
+						<label for="numPassengers">Passengers:</label>
+						<input type="text" name="numPassengers" id="numPassengers" value="1" />
+					</div>
+
+					<div id="dept">
+						<label for="deptDate">Departure Date:</label>
+						<input type="text" name="deptDate" id="deptDate" />
+					</div>
+
+					<div id="return">
+						<label for="returnDate">Return Date:</label>
+						<input type="text" name="returnDate" id="returnDate" />
+					</div>
+
+					<div id="from">
+						<label for="deptCity">Departure From:</label>
+						<input type="text" name="deptCity" id="deptCity" disabled="disabled" />
+					</div>
+
+					<div id="dest">
+						<label for="destCity">Destination:</label>
+						<input type="text" name="destCity" id="destCity" disabled="disabled" />
+					</div>
+
+					<input type="hidden" name="seats" />
+				</form>
+
+				<div id="seatMap">
+					<span>Select Your Seat(s)</span>
+					<img src="img/SeatMap.bmp" class="seatmap" usemap="#seats" />
+					<map name="seats"></map>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="part2">
+				<div id="flightMap">
+					<img src="img/FlightMap.jpg" class="flightmap" usemap="#destinations" />
+					<map name="destinations"></map>
+				</div>
+
+				<input type="submit" value="Submit" id="confirmBooking" />
+			</div>
+		</div>
+
+		<div class="clear"></div>
+
+		<div id="footer">
+			<p>University of Toronto CSC309 Assignment 3</p>
+			<p>Chieh-Feng (Jeff) Lee &copy; 2011</p>
+		</div>
+	</body>
+</html>

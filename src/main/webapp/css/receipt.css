@@ -1,0 +1,37 @@
+/*
+    Document   : print.css
+    Created on : 2011/10/29
+    Author     : Jeff Lee
+    Description:
+        CSS for printed receipt.
+*/
+
+#header {
+	font-family: "Irish Grover", arial;
+}
+
+body, #footer {
+	width: 450px;
+	margin: 0 auto;
+	font-family: "Terminal Dosis", arial;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.flight {
+	margin: 8px;
+}
+
+table {
+	margin: 0 5px;
+}
+
+td {
+	padding: 3px;
+}
+
+#footer {
+	font-size: 12px;
+}

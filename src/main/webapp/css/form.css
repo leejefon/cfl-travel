@@ -1,0 +1,35 @@
+/*
+    Document   : form.css
+    Created on : 2011/10/26
+    Author     : Jeff Lee
+    Description:
+		CSS for the booking form including the seating/flight maps and the input fields
+*/
+
+#part1 {
+	overflow: auto;
+	width: 90%;
+	margin: 36px auto;
+}
+
+#reservationForm {
+	text-align: left;
+	float: left;
+}
+
+#tripType table {
+	margin: 0 auto 4px;
+}
+
+#tripType table td {
+	padding: 3px 5px;
+}
+
+.flightmap {
+	margin: 0 auto;
+}
+
+.seatmap {
+	float: right;
+	margin: 8px 0;
+}

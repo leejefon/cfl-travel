@@ -1,0 +1,75 @@
+/*
+    Document   : orders.css
+    Created on : 2011/10/29
+    Author     : Jeff Lee
+    Description:
+        CSS for the list of order history.
+*/
+
+#printReceipt {
+	top: -999px;
+	left: -999px;
+	position: absolute;
+}
+
+#noPastRecords {
+	font-size: 90px;
+	margin: 60px;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 40px 0 5px;
+}
+
+.orderTitle, .newOrderTitle {
+	overflow: auto;
+	width: 90%;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 5px 0 5px 3px;
+	margin: 0 auto;
+}
+
+.orderTitle {
+	cursor: pointer;
+}
+
+.orderDate {
+	float: left;
+	margin-right: 50px;
+}
+
+.orderCity {
+	float: left;
+}
+
+.orderLink {
+	float: right;
+}
+
+.orderContent, .newOrderContent {
+	width: 90%;
+	overflow: auto;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.paymentInfo {
+	float: left;
+	text-align: left;
+}
+
+.paymentInfo td {
+	padding: 3px 5px;
+}
+
+.unpaid {
+	font-size: 70px;
+	margin: 30px 0 0 80px;
+}
+
+.seatmapDiv {
+	float: right;
+	overflow: auto;
+	text-align: left;
+}

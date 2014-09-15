@@ -1,0 +1,61 @@
+/*
+    Document   : payment.css
+    Created on : 2011/10/28
+    Author     : Jeff Lee
+    Description:
+        CSS for the payment form.
+*/
+
+#content {
+	overflow: auto;
+}
+
+#paymentForm {
+	float: left;
+}
+
+#paymentForm table {
+	margin: 0 70px;
+}
+
+select {
+	padding: 2px;
+	width: 114px;
+	text-align: center;
+	font-size: 16px;
+}
+
+option {
+	padding: 2px;
+}
+
+#paidMessage {
+	float: left;
+	font-size: 100px;
+	margin: 40px 0 10px;
+	width: 540px;
+}
+
+#paidMessage div {
+	margin: 30px 0;
+	font-size: 20px;
+}
+
+#orderSummary {
+	float: right;
+	margin: 0 70px;
+}
+
+#orderSummary h3 {
+	margin: 10px 0 6px;
+}
+
+#orderSummary td {
+	text-align: left;
+	padding: 3px 8px;
+}
+
+.topBorder td {
+	border-top: 1px solid #999999;
+}
+
