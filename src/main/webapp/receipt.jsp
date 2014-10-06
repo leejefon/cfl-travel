@@ -32,9 +32,10 @@
     <head>
 		<title>CFL Travel Agency - Order Summary (Ref#: <%= order.getOrderId() %>)</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css' />
-		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
-		<link rel="stylesheet" media="print" href="css/receipt.css" type="text/css" />
+
+		<link href='https://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+		<link href="css/receipt.css" rel="stylesheet" type="text/css" media="print" />
 	</head>
     <body onload="window.print()">
 		<div id="header">
