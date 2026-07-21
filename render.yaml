@@ -1,0 +1,10 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Deploy: push to your repo, then in Render pick "New +" > "Blueprint".
+services:
+  - type: web
+    name: cfl-travel-agency
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    # Render injects PORT automatically; Main.java reads it.
+    healthCheckPath: /
